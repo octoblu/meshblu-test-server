@@ -1,0 +1,4 @@
+--bail
+--recursive
+--require test/test_helper.js
+--timeout 15000

@@ -1,0 +1,16 @@
+language: node_js
+node_js: '8'
+services:
+- mongodb
+- redis
+deploy:
+  provider: npm
+  email: serveradmin@octoblu.com
+  api_key:
+    secure: TkR541LJHtgGpJyDymoGWmhyPbvC4VbcEC+FETJglWQTn8bd+5Q9TRZk8/0iOTpK5xPv1iAgoALfCIV3+9FkBrM3ALFvK4rQ8J16booO79pyzHAvUMnfNFzdhQVzX9deRB/Gkn+Dp0Tq66ceUPPItCrcekdsd+0p0n0tzVmnvF13mEtCjgL+EYmi2pE+hs70unH6eoecsx5vh3h7Ezsl/FXjTesYm6VDP3Y2mf8igWnwMDNCPAtMnO1UU+3hwi3DzTXFr4TQuVOh77xTj5FGWATzjImaKZa4Hlio+eJPhByViumPHk52ojyBrb8rhKoUESsZqWQ7HVkwUA51S5pA1AGZn2dQL08QTsmhl4nV1hq0cl7nnZ4flPhuVrIiTVsCe0oe5xYFUKCnsEkoIxqNRxmyPzGh0hIVeHNF56afeQa1PjZiCciLu+nDTAtGJtRpvYNpc2tih4pSDqm5xQeVYEKXPNxhyjrKxEkP6d2D3jyBKc/8ncw1QM93KoNOtBP7EJ6KH1imT+kB1e7Pig9fhdH4X7qHJ4uraajizHPh7XDTLpo1k6uk0x2lGUxiUusFLL2AJ/TxFiLTGgXUQ24LXVxAMlmAe20jC2eEHw4+tPyPwg7MLeL2nUaCzRwO118sR4EbAFyclJArX4bzxA3sy9Fu32SqKtsm2Mywc2u8d9I=
+  on:
+    tags: true
+    repo: octoblu/meshblu-test-server
+branches:
+  only:
+  - "/^v[0-9]/"
