@@ -1278,7 +1278,7 @@ formatio@1.1.1:
   dependencies:
     samsam "~1.1"
 
-formatio@1.2.0:
+formatio@1.2.0, formatio@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/formatio/-/formatio-1.2.0.tgz#f3b2167d9068c4698a8d51f4f760a39a54d818eb"
   dependencies:
@@ -1906,6 +1906,10 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
+just-extend@^1.1.22:
+  version "1.1.22"
+  resolved "https://registry.yarnpkg.com/just-extend/-/just-extend-1.1.22.tgz#3330af756cab6a542700c64b2e4e4aa062d52fff"
+
 keypress@0.1.x:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/keypress/-/keypress-0.1.0.tgz#4a3188d4291b66b4f65edb99f806aa9ae293592a"
@@ -2042,6 +2046,10 @@ lolex@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/lolex/-/lolex-1.6.0.tgz#3a9a0283452a47d7439e72731b9e07d7386e49f6"
 
+lolex@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/lolex/-/lolex-2.1.2.tgz#2694b953c9ea4d013e5b8bfba891c991025b2629"
+
 longest@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/longest/-/longest-1.0.1.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
@@ -2134,9 +2142,9 @@ meshblu-core-datastore@^5.1.0:
     json-stable-stringify "^1.0.1"
     lodash "^4.11.1"
 
-meshblu-core-dispatcher@^20.0.6:
-  version "20.0.6"
-  resolved "https://registry.yarnpkg.com/meshblu-core-dispatcher/-/meshblu-core-dispatcher-20.0.6.tgz#7419949d693519324bc156d76e0d2bc3277f1b5a"
+meshblu-core-dispatcher@^20.0.7:
+  version "20.0.7"
+  resolved "https://registry.yarnpkg.com/meshblu-core-dispatcher/-/meshblu-core-dispatcher-20.0.7.tgz#96306239b9ff5e666988b936ef2fdb44c986439f"
   dependencies:
     "@octoblu/redis-ns" "^1.3.1"
     async "^2.5.0"
@@ -2227,7 +2235,7 @@ meshblu-core-dispatcher@^20.0.6:
     meshblu-core-task-publish-message-received "^7.0.0"
     meshblu-core-task-publish-subscriptions "^4.0.2"
     meshblu-core-task-publish-unregister-received "^1.0.0"
-    meshblu-core-task-register-device "^3.0.0"
+    meshblu-core-task-register-device "^3.0.1"
     meshblu-core-task-reject-your-as "^1.0.0"
     meshblu-core-task-remove-device-cache "^2.0.2"
     meshblu-core-task-remove-root-session-token "^1.0.0"
@@ -2247,7 +2255,7 @@ meshblu-core-dispatcher@^20.0.6:
     meshblu-uuid-alias-resolver "^1.0.1"
     moment "^2.18.1"
     mongojs "^2.4.0"
-    octoblu-raven "^6.0.1"
+    octoblu-raven "^6.0.2"
     request "^2.81.0"
     sigterm-handler "^2.0.0"
     simple-benchmark "^1.1.1"
@@ -2314,6 +2322,18 @@ meshblu-core-manager-device@^3.0.1, meshblu-core-manager-device@^3.1.0, meshblu-
 meshblu-core-manager-device@^4.0.0, meshblu-core-manager-device@^4.2.1:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/meshblu-core-manager-device/-/meshblu-core-manager-device-4.2.1.tgz#5520fb17c9d6b484c7e99ab4cad34d01e3a10326"
+  dependencies:
+    async "^1.5.2"
+    bcrypt "^0.8.5"
+    coffee-script "^1.10.0"
+    lodash "^4.13.1"
+    meshblu-core-manager-root-token "^1.0.0"
+    moment "^2.13.0"
+    uuid "^2.0.1"
+
+meshblu-core-manager-device@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/meshblu-core-manager-device/-/meshblu-core-manager-device-4.2.2.tgz#dd45d8e3902059efa73228a114f9ecbe54ed3a00"
   dependencies:
     async "^1.5.2"
     bcrypt "^0.8.5"
@@ -2992,13 +3012,13 @@ meshblu-core-task-publish-unregister-received@^1.0.0:
     coffee-script "^1.10.0"
     lodash "^4.6.1"
 
-meshblu-core-task-register-device@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/meshblu-core-task-register-device/-/meshblu-core-task-register-device-3.0.0.tgz#a3c0c5d84e9434e1db94efa59efec968bd5733e4"
+meshblu-core-task-register-device@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/meshblu-core-task-register-device/-/meshblu-core-task-register-device-3.0.1.tgz#9d4c0607cf1c3d0914fc0a9764d0274b7c4509b8"
   dependencies:
     coffee-script "^1.10.0"
     lodash "^4.6.1"
-    meshblu-core-manager-device "^3.0.1"
+    meshblu-core-manager-device "^4.2.2"
 
 meshblu-core-task-reject-your-as@^1.0.0:
   version "1.0.0"
@@ -3207,15 +3227,15 @@ meshblu-list-checker@^2.0.0:
     coffee-script "^1.10.0"
     lodash "^4.6.1"
 
-meshblu-server@^5.1.6:
-  version "5.1.6"
-  resolved "https://registry.yarnpkg.com/meshblu-server/-/meshblu-server-5.1.6.tgz#fd0e7d80ba395ebd92a837fde627a07a31e2decc"
+meshblu-server@^5.1.7:
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/meshblu-server/-/meshblu-server-5.1.7.tgz#50abb0e86224b9ec48c9e7a4deb4e77368848acb"
   dependencies:
     async "^2.5.0"
     coffee-script "^1.12.7"
     dashdash "^1.14.0"
     debug "^2.6.8"
-    meshblu-core-dispatcher "^20.0.6"
+    meshblu-core-dispatcher "^20.0.7"
     meshblu-core-protocol-adapter-http "^6.0.3"
     meshblu-core-worker-webhook "^4.1.4"
     sigterm-handler "^2.0.0"
@@ -3430,6 +3450,15 @@ negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
 
+nise@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/nise/-/nise-1.0.1.tgz#0da92b10a854e97c0f496f6c2845a301280b3eef"
+  dependencies:
+    formatio "^1.2.0"
+    just-extend "^1.1.22"
+    lolex "^1.6.0"
+    path-to-regexp "^1.7.0"
+
 node-rsa@^0.3.2:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/node-rsa/-/node-rsa-0.3.4.tgz#0d13c73d3cbe3b3dc7457a81a2657f40e4426be6"
@@ -3523,6 +3552,16 @@ object.omit@^2.0.0:
 octoblu-raven@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/octoblu-raven/-/octoblu-raven-6.0.1.tgz#cae82f7e32513b59eee85e91f918426b69a2cb7a"
+  dependencies:
+    coffee-script "^1.12.7"
+    debug "^2.6.8"
+    errorhandler "^1.5.0"
+    lodash "^4.16.4"
+    raven "^2.1.1"
+
+octoblu-raven@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/octoblu-raven/-/octoblu-raven-6.0.2.tgz#4a9cbaa0b9e9ef9ed08498cc51c891be92ab40b4"
   dependencies:
     coffee-script "^1.12.7"
     debug "^2.6.8"
@@ -4150,14 +4189,15 @@ sinon@^1.17.4:
     samsam "1.1.2"
     util ">=0.10.3 <1"
 
-sinon@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/sinon/-/sinon-2.4.1.tgz#021fd64b54cb77d9d2fb0d43cdedfae7629c3a36"
+sinon@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/sinon/-/sinon-3.0.0.tgz#f6919755c8c705e0b4ae977e8351bbcbaf6d91de"
   dependencies:
     diff "^3.1.0"
     formatio "1.2.0"
-    lolex "^1.6.0"
+    lolex "^2.1.2"
     native-promise-only "^0.8.1"
+    nise "^1.0.1"
     path-to-regexp "^1.7.0"
     samsam "^1.1.3"
     text-encoding "0.6.4"

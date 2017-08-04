@@ -1,6 +1,6 @@
 {
   "name": "meshblu-test-server",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "index.js",
   "repository": "git@github.com:octoblu/meshblu-test-server.git",
   "author": "sqrtofsaturn <sqrtofsaturn@gmail.com>",
@@ -18,7 +18,7 @@
     "mocha": "^3.5.0",
     "request": "^2.81.0",
     "shmock": "^0.8.1",
-    "sinon": "^2.4.1",
+    "sinon": "^3.0.0",
     "sinon-chai": "^2.12.0"
   },
   "dependencies": {
@@ -26,7 +26,7 @@
     "chance": "^1.0.10",
     "ioredis": "^3.1.2",
     "lodash": "^4.17.4",
-    "meshblu-server": "^5.1.6",
+    "meshblu-server": "^5.1.7",
     "mongojs": "^2.4.0"
   }
 }
