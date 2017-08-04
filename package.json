@@ -1,6 +1,6 @@
 {
   "name": "meshblu-test-server",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "index.js",
   "repository": "git@github.com:octoblu/meshblu-test-server.git",
   "author": "sqrtofsaturn <sqrtofsaturn@gmail.com>",
@@ -26,7 +26,7 @@
     "chance": "^1.0.10",
     "ioredis": "^3.1.2",
     "lodash": "^4.17.4",
-    "meshblu-server": "^5.1.5",
+    "meshblu-server": "^5.1.6",
     "mongojs": "^2.4.0"
   }
 }
