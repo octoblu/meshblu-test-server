@@ -3177,9 +3177,9 @@ meshblu-list-checker@^2.0.0:
     coffee-script "^1.10.0"
     lodash "^4.6.1"
 
-meshblu-server@^5.1.2:
-  version "5.1.2"
-  resolved "https://registry.yarnpkg.com/meshblu-server/-/meshblu-server-5.1.2.tgz#d873c710011a3b5361e599fa654f90b64720aa77"
+meshblu-server@^5.1.4:
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/meshblu-server/-/meshblu-server-5.1.4.tgz#e7bd566d0356369d9f864621b6f690985fa4353c"
   dependencies:
     async "^2.5.0"
     coffee-script "^1.12.7"
