@@ -30,6 +30,17 @@ describe('your application', function() {
 })
 ```
 
+## Sinon
+If you use sinon.useFakeTimers, you need to whitelist the functions that are mocked out. This is because
+mongojs uses setTimeout a bunch under the hood and stopping time causes it to just never respond.
+Related docs: http://sinonjs.org/releases/v3.2.1/fake-timers/
+
+```javascript
+const now = Date.now()
+sinon.useFakeTimers({ now, toFake: ['Date'] })  // now is optional
+moment().utc().format()  // moment should work as expected. AFAIK, moment only uses Date
+```
+
 ## Travis
 
 In order for the server to work in travis, you'll need to add the following to your `.travis.yml`
