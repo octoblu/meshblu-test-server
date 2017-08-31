@@ -1,6 +1,8 @@
 # meshblu-test-server
 A helper for spinning up a meshblu-server for your tests
 
+## Example
+
 ```javascript
 const MeshbluServer = require('meshblu-test-server')
 const MeshbluHttp = require('meshblu-http')
@@ -26,4 +28,14 @@ describe('your application', function() {
     })
   })
 })
+```
+
+## Travis
+
+In order for the server to work in travis, you'll need to add the following to your `.travis.yml`
+
+```yaml
+services:
+- redis
+- mongodb
 ```
